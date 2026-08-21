@@ -2,7 +2,7 @@
 
 These notes explain each paper in simple English: what it says, how it connects to AI, and why it is useful for your TikTok research review at Fraunhofer SIT.
 
-## 1. Boeker & Urman (2022) — Personalisation factors on TikTok
+## 1. [Boeker & Urman (2022) — Personalisation factors on TikTok](https://doi.org/10.1145/3485447.3512102)
 
 **What is this paper about?**
 
@@ -18,7 +18,7 @@ TikTok's recommender system is an AI system. This paper is an example of **algor
 
 It gives you a basic method for studying recommendations. It also teaches an important lesson: an experiment can show that a behaviour changes recommendations, but it cannot tell us the exact hidden ranking formula.
 
-## 2. Zannettou et al. (2024) — Real users’ TikTok viewing behaviour
+## 2. [Zannettou et al. (2024) — Real users’ TikTok viewing behaviour](https://doi.org/10.1145/3613904.3642433)
 
 **What is this paper about?**
 
@@ -34,7 +34,7 @@ AI recommendations only matter when people actually see and react to them. This 
 
 It shows the difference between a controlled test account and a real person. If your research asks “what does TikTok show users?”, real exposure data are usually more meaningful than a simple keyword dataset.
 
-## 3. Mousavi, Gummadi & Zannettou (2024) — “Why this video?” explanations
+## 3. [Mousavi, Gummadi & Zannettou (2024) — “Why this video?” explanations](https://ojs.aaai.org/index.php/ICWSM/article/view/31376)
 
 **What is this paper about?**
 
@@ -50,7 +50,7 @@ This is about **explainable AI (XAI)** and AI transparency. An explanation is us
 
 It gives you a direct link to Fraunhofer SIT topics: trustworthy systems, transparency, accountability and security. It also shows how to test an AI explanation instead of simply trusting it.
 
-## 4. Entrena-Serrano et al. (2025) — Problems with the TikTok Research API
+## 4. [Entrena-Serrano et al. (2025) — Problems with the TikTok Research API](https://arxiv.org/abs/2506.09746)
 
 **What is this paper about?**
 
@@ -66,7 +66,7 @@ AI results are only as reliable as the data used to create them. If the dataset 
 
 Before training models or making claims from TikTok data, you need to know what data are missing. This paper tells you to validate your data collection, log failures, and avoid treating API results as the whole platform.
 
-## 5. Steel, Parker & Ruths (2023) — TikTok data about the Ukraine war
+## 5. [Steel, Parker & Ruths (2023) — TikTok data about the Ukraine war](https://arxiv.org/abs/2301.08305)
 
 **What is this paper about?**
 
@@ -82,7 +82,7 @@ This is relevant to **NLP**, **multilingual AI**, **social-media analysis**, and
 
 It is a useful warning before applying an existing AI model to TikTok. You need to validate models on TikTok-specific data rather than assume that a Twitter, Facebook or Reddit model will work.
 
-## 6. Pinto et al. (2024) — GET-Tok: multimodal AI for a political event
+## 6. [Pinto et al. (2024) — GET-Tok: multimodal AI for a political event](https://arxiv.org/abs/2402.05882)
 
 **What is this paper about?**
 
@@ -98,7 +98,7 @@ This is directly about **multimodal AI**: combining text, audio and video. It us
 
 It gives you a practical pipeline for analysing TikTok video content. It also teaches a key AI lesson: AI-generated labels and transcripts are not automatically correct. You need human evaluation before using them as ground truth.
 
-## 7. Mosnar et al. (2025) — Why TikTok audits are hard to reproduce
+## 7. [Mosnar et al. (2025) — Why TikTok audits are hard to reproduce](https://arxiv.org/abs/2504.18140)
 
 **What is this paper about?**
 
@@ -114,7 +114,7 @@ This is about **reproducible AI**, evaluation and measurement. AI systems deploy
 
 It prevents overconfident conclusions. If you study TikTok, always record the date, region, device, account setup and method. A result should be presented as “what we observed then,” not as a permanent truth about the algorithm.
 
-## 8. Jamie, Ghasemian & Hosseinmardi (2026) — Mental-health recommendations
+## 8. [Jamie, Ghasemian & Hosseinmardi (2026) — Mental-health recommendations](https://arxiv.org/abs/2601.08720)
 
 **What is this paper about?**
 
