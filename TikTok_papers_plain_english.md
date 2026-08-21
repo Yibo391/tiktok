@@ -114,7 +114,7 @@ This is about **reproducible AI**, evaluation and measurement. AI systems deploy
 
 It prevents overconfident conclusions. If you study TikTok, always record the date, region, device, account setup and method. A result should be presented as “what we observed then,” not as a permanent truth about the algorithm.
 
-## 8. [Jamie, Ghasemian & Hosseinmardi (2026) — Mental-health recommendations](https://arxiv.org/abs/2601.08720)
+## 8. [Jamie, Ghasemian & Hosseinmardi (2026) — Mental-health recommendations](https://arxiv.org/abs/2604.14832)
 
 **What is this paper about?**
 
