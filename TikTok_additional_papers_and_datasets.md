@@ -123,16 +123,3 @@ The following three datasets were selected independently of Part 1. All three re
 | [News on TikTok](https://access.gesis.org/sharing/2863/6674) — German-language professional news | Direct GESIS download; **CC BY 4.0** | CSV metadata and 25 human-coded variables; IDs/URLs; no video, audio, captions, transcripts, OCR, or comment text | **18 accounts; 8,623 videos**; 7,978 fully coded news videos. Storage **not reported**. Comments: **none**, only count metadata. | Official Research API, account-based sampling; Zeeschuimer cross-check (+64) | Posts: **2023**. API crawl: **Jan 2024**. Annotation: **Sep 2024–Feb 2025**. | Selected outlets only; engagement snapshot; source media absent; link rot. |
 | [PoliTok-DE](https://huggingface.co/datasets/tomasruiz/PoliTok-DE) — German elections and deletion | Public ID/status/annotation Parquet and hydration code; deleted stored media request-only; **CC BY 4.0** | IDs and dated availability/status; 935 annotations. Media and metadata only through hydration if still live. | Creators **not reported**; **938,961 IDs** + 935 annotation rows; **12.5 MB** public files; comments **not reported**. | Daily Research API keyword queries (`region=DE`) 96 hours after publication; web hydration; later re-scrapes | Posts: **1 Jul–30 Nov 2024** and **13 Jan–30 Apr 2025**. Rechecks through **11 Jun 2026**. | Keyword/API-lag bias; deleted content cannot hydrate; time-specific deletion measures; no creator count. |
 
-## Practical conclusion
-
-For immediate research use, **News on TikTok** is the cleanest labelled tabular dataset. **PoliTok-DE** is the strongest choice for studying deletion and temporal availability, provided that ID hydration is acceptable. The **US election dataset** offers the largest scale but requires careful version management and has no stated repository licence. None of these three directly redistributes a complete raw-video collection.
-
-The most important reporting rule is therefore to avoid writing only “the dataset is public.” A reproducible description should state whether the public object is raw content, metadata, annotations, IDs, hydration code, or a controlled-access archive, and should record both the content-publication window and the actual retrieval date.
-
-## Validation notes
-
-- Full text and official ICWSM records were checked for all five papers.
-- Dataset pages and links were checked on 2 September 2026. The check confirms page/file availability and semantic relevance; it does not mean that every TikTok ID was hydrated or every multi-gigabyte dataset was downloaded.
-- Counts that changed between a paper snapshot and a later repository release are reported with their corresponding dates.
-- The five papers were compared with the eight headings in `TikTok_research_warmup.md`; no duplicate paper was found.
-- No existing research note was modified, and nothing was committed or published.
