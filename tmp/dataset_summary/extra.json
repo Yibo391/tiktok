@@ -1,0 +1,108 @@
+{
+  "German Multimodal": {
+    "lag": {
+      "median_days": 47.0,
+      "p25": 26.0,
+      "p75": 81.0,
+      "n": 5137
+    },
+    "conc": {
+      "creators": 2987,
+      "median_posts": 1.0,
+      "mean_posts": 1.7197857381988617,
+      "top1pct_creators": 30,
+      "top1pct_share": 0.12341833755109986
+    }
+  },
+  "TikTok-10M": {
+    "lag": {
+      "median_days": 78.36887903179398,
+      "p25": 2.137495981730324,
+      "p75": 322.3661932748148,
+      "n": 9985499
+    },
+    "conc": {
+      "creators": 3165834,
+      "median_posts": 1.0,
+      "mean_posts": 3.1541593779080013,
+      "top1pct_creators": 31659,
+      "top1pct_share": 0.21412321510743781
+    }
+  },
+  "GESIS News": {
+    "lag_approx": {
+      "median_days": 186.0946412037037,
+      "p25": 99.32076388888888,
+      "p75": 276.32965856481485,
+      "n": 8623
+    },
+    "conc": {
+      "creators": 18,
+      "median_posts": 376.5,
+      "mean_posts": 479.05555555555554,
+      "top1pct_creators": 1,
+      "top1pct_share": 0.21489040937028878
+    }
+  },
+  "TIDES Influencer": {
+    "lag_approx": {
+      "median_days": 68.27258101851852,
+      "p25": 34.27619212962963,
+      "p75": 165.47524305555555,
+      "n": 233994
+    },
+    "conc": {
+      "creators": 5000,
+      "median_posts": 50.0,
+      "mean_posts": 46.7988,
+      "top1pct_creators": 50,
+      "top1pct_share": 0.010684034633366668
+    }
+  },
+  "Climate Change": {
+    "conc": {
+      "creators": 18041,
+      "median_posts": 14.0,
+      "mean_posts": 32.72324150545979,
+      "top1pct_creators": 181,
+      "top1pct_share": 0.10324378345416356
+    }
+  },
+  "Ukraine": {
+    "conc": {
+      "creators": 5782,
+      "median_posts": 1.0,
+      "mean_posts": 1.6435489450017295,
+      "top1pct_creators": 58,
+      "top1pct_share": 0.15658213195832896
+    }
+  },
+  "PoliTok-DE": {
+    "deletion": {
+      "federal_2025 @ 2026_06_11": {
+        "deleted": 295101,
+        "conclusive": 743588,
+        "total": 743588,
+        "rate": 0.39686089608761843
+      },
+      "saxony_2024 @ 2024_10_02": {
+        "deleted": 6475,
+        "conclusive": 102949,
+        "total": 195373,
+        "rate": 0.06289521996328279
+      },
+      "saxony_2024 @ 2024_12_10": {
+        "deleted": 18568,
+        "conclusive": 107278,
+        "total": 195373,
+        "rate": 0.17308301795335485
+      },
+      "saxony_2024 @ 2025_01_13": {
+        "deleted": 36617,
+        "conclusive": 193359,
+        "total": 195373,
+        "rate": 0.18937313494587787
+      }
+    }
+  }
+}

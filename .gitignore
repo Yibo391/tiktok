@@ -1,0 +1,20 @@
+# Raw datasets: download them again with downloaded_datasets/DOWNLOAD_MANIFEST.md
+downloaded_datasets/*
+!downloaded_datasets/*.md
+*.zip
+__MACOSX/
+
+# Full-text papers by other authors
+tmp/pdfs/
+
+# Slide build and review scratch
+.tmp_tiktok_deck/
+.tmp_tiktok_review/
+*.inspect.ndjson
+
+# OS and Office lock files
+.DS_Store
+~$*
+
+# Python cache
+__pycache__/

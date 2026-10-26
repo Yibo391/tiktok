@@ -1,0 +1,15 @@
+Five More TikTok Datasets — Short Oral Description
+
+Today I will briefly introduce five more TikTok datasets. These are different from the three datasets in my earlier report. I only describe their availability, structure, size, and collection method. I did not perform statistical analysis.
+
+The first dataset is about the invasion of Ukraine. It contains about 9,500 video records and 4.4 million comments from about 2.6 million comment authors. The public release gives video IDs and collection scripts, but it does not give raw videos. Researchers must use the IDs to request the data from TikTok. This means that deleted videos cannot be recovered. The data was first collected in July 2022 and updated in April 2023.
+
+The second dataset is DeHate. It studies explicit and implicit hate in videos from TikTok and BitChute. It has 6,689 videos in total, including 1,637 TikTok videos. The public Excel file contains detailed labels, such as the type of hate, the time of the hateful part, the important modality, and the target group. The actual videos are not openly downloadable. Researchers have to apply for access. The public sources do not clearly report the crawling method or collection dates.
+
+The third dataset is RELIANCE. It focuses on reproductive-health information on TikTok. It is based on 336 videos and releases 409 short text parts with labels from medical experts. The labels describe whether a claim is accurate and whether it may be harmful. The JSON file is public, but it does not contain video IDs, URLs, raw videos, or creator data. The researchers collected the top six search results for 56 questions in January 2025.
+
+The fourth dataset is TikTok-10M. It is a large metadata dataset on Hugging Face. Its data card says it has 10 million posts, but the current viewer estimates about 6.65 million rows. The files are 9.78 gigabytes. They contain post descriptions, engagement counts, user IDs, location information, music information, and TikTok URLs. They do not contain raw video files or comment texts. The dataset card says the content was trending in spring 2025, but it does not explain the crawler in detail.
+
+The fifth dataset is the DSA's Blind Spot audit dataset. It studies advertising and the profiling of minors. Eight automated accounts collected 7,095 video presentations during ten days in December 2025. The data includes session information, ad labels, user profiles, descriptions, transcripts, and some video excerpts. However, the dataset is restricted. Only verified academic researchers can apply for non-commercial research access.
+
+The main conclusion is that “available” has different meanings. One dataset gives IDs, one gives only text and labels, one gives a large metadata table, and two require an application for video access. Therefore, we must check what is truly downloadable before choosing a dataset for a project.

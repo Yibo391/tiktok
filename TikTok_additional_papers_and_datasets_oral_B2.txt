@@ -1,0 +1,153 @@
+TikTok Research: Oral Presentation Script
+B2-level English, about 12 to 14 minutes at a clear speaking speed
+
+Good morning, Professor.
+
+Today, I would like to present my additional research about TikTok.
+
+My work has two separate parts. In the first part, I reviewed five new papers about TikTok. These papers study different topics, including recommendation systems, comment ranking, political content, climate communication, and content moderation.
+
+In the second part, I looked at three TikTok datasets. For each dataset, I checked whether it is still available, what information it contains, how large it is, and how and when the researchers collected it.
+
+I will start with the five papers.
+
+
+Paper 1: ClipMind
+
+The first paper is called ClipMind. It studies TikTok’s recommendation system.
+
+The researchers created five automatic TikTok accounts. One account watched videos in a random way. The other four accounts showed interest in food, beauty care, mental health, or war and military content.
+
+Each account collected 500 recommended videos, so the researchers studied 2,500 videos in total. They used a multimodal AI method. This means that they analysed several kinds of information together, such as the video image, audio, written text, and AI-generated descriptions.
+
+The researchers found that the food and beauty accounts received more and more similar videos. However, they did not find the same strong pattern for mental health or war content.
+
+This paper is useful because it shows how AI can help us check another AI system. However, the study used only five accounts and four topics. Therefore, we cannot use it to make a general claim about every TikTok user.
+
+
+Paper 2: Personalisation in TikTok comments
+
+The second paper studies whether TikTok changes the order of comments for users with different political interests.
+
+The researchers created left-leaning, right-leaning, and new control accounts. In the final test, 22 accounts opened the same 65 videos about the 2024 US election. The researchers recorded the first 50 comments shown to each account.
+
+They found that different accounts usually saw similar comments. However, the order of these comments was sometimes different. The difference was stronger when a video had many comments or when the political discussion was unbalanced.
+
+This result is important because the first comments can influence how users understand a discussion. Even when TikTok does not hide comments, changing their order can make some opinions look more important.
+
+The main limitation is the small test size. The study only used 65 videos and 22 accounts, so it does not show how common this effect is across the whole platform.
+
+
+Paper 3: What users think is political
+
+The third paper asks a different question: What do TikTok users themselves consider to be political content?
+
+The researchers recruited 366 adults in the United States. The participants used a browser tool with their own TikTok accounts. Each person marked at least 40 videos as explicitly political, implicitly political, or not political. They also explained their choice in a short text.
+
+The final data contained more than 15,000 user annotations for 11,312 different TikTok videos.
+
+On average, the participants considered 16.85 percent of their feeds to be political. Older users and people with a stronger interest in politics reported more political content.
+
+An important point is that different people may judge the same video differently. This matters for AI because a model may treat “political content” as a simple yes-or-no label, while real users may understand the content in different ways.
+
+The study only included adults in the United States, so it does not represent all countries or younger TikTok users.
+
+
+Paper 4: Climate change on TikTok
+
+The fourth paper maps climate-change discussions on TikTok.
+
+The researchers started with climate-related accounts and created a list of 193 hashtags. They used the official TikTok Research API to collect more than 1.3 million videos. For the final topic analysis, they used 590,361 videos with useful English descriptions.
+
+The study found that lifestyle and food choices were major parts of climate discussion. Topics such as healthy cooking, nature, oceans, and travel may help bring new users into conversations about climate change.
+
+This paper is interesting because it combines topic modelling, text analysis, and a network of content creators.
+
+However, the sample depends on selected hashtags, English descriptions, and TikTok’s API. It describes content that was published, but it does not tell us exactly what normal users saw in their personal feeds.
+
+
+Paper 5: COVID-19 warning labels
+
+The fifth paper studies TikTok’s warning labels during the COVID-19 pandemic.
+
+The researchers collected 41,583 popular videos using 26 COVID-related hashtags. They also manually studied 222 English videos in detail.
+
+They found that 46 percent of the full dataset had a warning label. Almost all videos with the hashtag “coronavirus” received a warning. However, the system was not always correct. Some harmless videos had warning labels, while some harmful or misleading videos did not.
+
+This paper shows an important problem in AI moderation. If there are too many wrong warnings, users may stop trusting them. If dangerous content is not labelled, the system also fails to protect users.
+
+The sample came from popular hashtag searches, so it was not a random sample of all TikTok videos.
+
+
+Summary of the papers
+
+These five papers study different parts of TikTok. The first paper studies video recommendations. The second studies comment ranking. The third focuses on users’ own understanding of political content. The fourth studies climate communication. The fifth studies warning labels and moderation.
+
+The main lesson is that the source of the data is very important. Search results, recommended feeds, comments, and hashtag collections measure different things. We should not treat them as the same type of evidence.
+
+
+Part 2: Three TikTok datasets
+
+Now I will present the three datasets. I selected them separately from the five papers. My main question was not only “Is the dataset public?” I also checked what a researcher can really download.
+
+
+Dataset 1: The 2024 US Presidential Election dataset
+
+The first dataset is about the 2024 US presidential election.
+
+The GitHub repository is publicly available. It mainly provides TikTok video IDs, collection scripts, and the keywords and hashtags used by the researchers. Whisper speech transcripts are available through a separate Google Drive folder. The repository does not provide the raw video files, and it does not clearly state a licence.
+
+The paper version contains about 3.14 million videos, around 694,000 users, and about 485,000 transcripts. A later repository update reports more than 4 million video IDs.
+
+The researchers used the official TikTok Research API. They searched with election keywords and hashtags and limited the queries to the United States and different election periods. They also used PyKTok to download available videos and Whisper to create speech transcripts.
+
+The video publication period started in November 2023. The later version continued until January 2025. The exact start and end of the crawling process were not reported.
+
+This dataset is very large, but it has several problems. The CSV versions overlap, old TikTok videos may disappear, and the public repository contains less information than the full research dataset.
+
+
+Dataset 2: News on TikTok
+
+The second dataset studies videos from professional German-speaking news organisations.
+
+It is available from the GESIS data repository under a Creative Commons Attribution licence, also called CC BY 4.0.
+
+The dataset contains 8,623 videos from 18 news accounts in Germany, Austria, and Switzerland. It provides video IDs, links, posting time, music IDs, hashtags, and numbers for views, likes, comments, and shares.
+
+It also contains 25 types of human annotation. For example, researchers marked whether a video was news, what visual and audio style it used, what topic it discussed, and which news values appeared.
+
+However, the dataset does not include the original video files, audio files, descriptions, transcripts, or comment texts.
+
+The videos were published in 2023. The researchers collected the metadata with the official Research API in January 2024. They checked the results with another browser tool and found 64 additional videos. Human annotation took place from September 2024 to February 2025.
+
+In my opinion, this is the cleanest dataset for supervised research because it has a clear codebook and careful human labels. Its main weakness is that the original media are not included.
+
+
+Dataset 3: PoliTok-DE
+
+The third dataset is called PoliTok-DE. It studies political TikTok posts from two German elections and also checks which posts later disappeared.
+
+The dataset is freely available on Hugging Face under the CC BY 4.0 licence. It contains 938,961 post IDs. About 195,000 are from the 2024 Saxony election, and about 744,000 are from the 2025 German federal election.
+
+The public files contain post IDs, the election collection, and information about whether each post was still available on different dates. The dataset also includes 935 human annotations and a hydration script.
+
+Hydration means using a post ID to download the video and metadata again from TikTok. This only works if the post is still online. The repository does not directly provide all raw videos, images, or audio. Researchers can request access to stored deleted content for academic work.
+
+The authors searched the official Research API every day with German election keywords. They waited 96 hours after each publication date because new posts may take time to appear in the API. Later, they checked the posts again to see which ones were still available.
+
+This dataset is especially useful for studying deletion and missing data over time. Its main problem is that deleted videos usually cannot be downloaded again by normal users. It also does not report the number of unique creators or comments.
+
+
+Final comparison and conclusion
+
+To compare the three datasets, the US election dataset is the largest. It is useful for large-scale political, hashtag, and transcript analysis, but its versions overlap and its licence is unclear.
+
+News on TikTok is much smaller, but it has the clearest human annotations. It is probably the easiest choice for training or evaluating a content classifier.
+
+PoliTok-DE is the best choice for studying how political content disappears over time. However, it depends on hydration, so deleted content may no longer be available.
+
+None of these three datasets is a complete collection of raw TikTok videos. This is my main conclusion about availability. When we say that a TikTok dataset is public, we must explain what is actually public. It may be only video IDs, metadata, annotations, transcripts, or code for downloading videos that are still online.
+
+We should also record two different kinds of time: first, when the videos were published, and second, when the researchers collected or checked them. This is important because TikTok data can change or disappear.
+
+Thank you for listening. I am happy to answer your questions.

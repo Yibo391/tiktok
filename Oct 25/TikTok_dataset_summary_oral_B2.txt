@@ -1,0 +1,127 @@
+Studying TikTok from the Past — Oral Presentation Script (B2 English)
+
+Speaking time: about 11–12 minutes. One section per slide.
+
+
+[Slide 1 — Title]
+
+Good morning, everyone. Today I want to talk about a simple question: what can we learn about TikTok from data that other researchers collected in the past?
+
+I compared ten public TikTok datasets. I described all of them with the same set of columns. Very often, a dataset does not give the information that a column asks for. In the table, I write "NaN" for these empty cells. My main message today is that these NaNs are not just missing data. They are a finding. They show us what is difficult when we study TikTok from old data.
+
+
+[Slide 2 — The question]
+
+So, why is TikTok hard to study from the past? When we watch TikTok live, we can see everything at the moment. But when we use a dataset from someone else, we only see what they decided to collect and what they decided to share.
+
+To compare the datasets fairly, I used the same columns for all ten. First, the crawling seed. This means how the authors found the posts. Second, the number of creators and posts. Third, the follower tiers of the creators, from nano to mega. Fourth, engagement at the 99th percentile, which I will call P99. P99 means that 99 percent of posts have a value below this number, so it tells us about the most popular posts. Fifth, the crawl time compared with the post period. And finally, three extra measures: crawl lag, deletion rate and creator concentration. I will explain these later.
+
+One important point about the method: we calculated all counts and percentiles ourselves from the released files. Information that is not in the files, like the crawling method, comes from the papers and data reports.
+
+
+[Slide 3 — Ten datasets]
+
+Here are the ten datasets side by side. They are very different in size. The smallest is RELIANCE, with 336 posts. The largest is TikTok-10M, with almost ten million unique posts. So the sizes cover four orders of magnitude. The crawls also took place at different times, between 2022 and 2025.
+
+You can already see the red NaN cells. Four datasets do not tell us how many creators they contain. DeHate does not report its seed or its crawl time. US Election 2024 gives no crawl dates at all. In fact, only two datasets, German Multimodal and TikTok-10M, let us read the exact crawl dates directly from the data.
+
+
+[Slide 4 — Three ways to find posts]
+
+Now let's look at the crawling seed more closely. There are three ways to find posts.
+
+The first way starts from creators. The authors choose some accounts and collect their posts. TIDES did this with influencer lists, and GESIS did it with eighteen German-language news outlets.
+
+The second way starts from posts. The authors search for keywords or hashtags and collect the posts that match. This is the most common approach. PoliTok-DE, Ukraine, US Election 2024 and RELIANCE all used it.
+
+Climate Change is a mix of both. It started from 105 creators and then expanded to 193 hashtags.
+
+The third way is to simulate a user. Only German Multimodal did this. The authors recorded what TikTok's Explore page showed to a logged-out user with a German IP address.
+
+Two datasets, DeHate and TikTok-10M, do not say how they found their posts. This is a problem, because, as we will see, the seed shapes everything that comes after it.
+
+
+[Slide 5 — What is missing]
+
+Next, let's count which columns are actually available. Eight out of ten datasets report a crawling seed, and six report the number of creators. But only four datasets give engagement counts, such as views, likes, comments and shares. Only two give follower counts, and only two let us calculate exact crawl dates.
+
+In other words, the information that engagement research needs most is exactly the information that is missing most often.
+
+
+[Slide 6 — Data availability matrix]
+
+This matrix asks a stricter question. For nine types of data, is the field released publicly, only partly, or not at all? A tick means fully released. A half circle means partly released, for example only hashtags or only hashed IDs. A cross means not released.
+
+Two columns are empty for every dataset. No dataset releases the videos themselves, and no dataset releases the text of comments. At best, we get video links, embeddings or a script to collect the data again.
+
+Only three datasets — TIDES, GESIS and TikTok-10M — fully release more than half of the nine fields. Six of the ten datasets fully release two fields or fewer. US Election, PoliTok-DE and RELIANCE fully release only one.
+
+
+[Slide 7 — Engagement is heavy-tailed]
+
+For the four datasets with engagement data, the numbers are extremely uneven. Most posts get little attention, but a few posts get a huge amount. We call this a heavy-tailed distribution.
+
+Look at P99 views. It is about 0.7 million in GESIS, but 47.6 million in German Multimodal. That is a 66-fold difference. Inside each dataset, the P99 is between 21 and 714 times bigger than the median.
+
+Why are the datasets so different? Mainly because of how they were sampled. The Explore page already shows popular videos. TIDES chose one thousand creators in each follower tier. GESIS only covers news outlets. And in TikTok-10M, the smallest like count is twenty-two, which suggests that the authors filtered out unpopular posts. So these differences tell us about the sampling as much as about the audience.
+
+
+[Slide 8 — Follower tiers]
+
+Only two datasets let us look at follower tiers, and they tell very different stories.
+
+In German Multimodal, 63 percent of the creators are mid-tier or larger. This is because the Explore page mostly shows big accounts. Here we used each creator's highest follower count.
+
+TIDES has exactly one thousand creators in each tier. This was a design choice by the authors, not a natural pattern. One small detail: if we use our own thresholds instead of the authors' labels, four TIDES creators sit exactly on a tier boundary.
+
+So in both cases, the follower mix reflects the seed, not TikTok as a whole.
+
+
+[Slide 9 — Crawl lag]
+
+Now let's talk about time. Engagement numbers are snapshots. They show the value on the day of the crawl. So it matters how old the video was at that moment. We call this the crawl lag: the number of days between posting and crawling.
+
+The crawl lag is very different across datasets. PoliTok-DE collected posts four days after posting, by design. For German Multimodal, the median is 47 days. For TIDES, it is about 68 days. TikTok-10M has a median of 78 days, but the range goes from two days to almost a year. GESIS has the longest lag, about 186 days.
+
+For GESIS and TIDES, we only know the crawl month, so we used the middle of the month. That is why I write "about".
+
+The result is that a P99 from GESIS and a P99 from TikTok-10M measure different moments in a video's life. We cannot compare them directly.
+
+
+[Slide 10 — Deletion rate]
+
+Posts also disappear over time, and the share keeps growing.
+
+PoliTok-DE checked again later whether its posts were still available. For the Saxony posts, 6.3 percent were gone in October 2024, 17.3 percent in December, and 18.9 percent in January 2025. For the federal posts, 39.7 percent were gone by June 2026. The Ukraine authors found a similar result: about 30 percent of the videos were unavailable after six months.
+
+There are several reasons. The creator deleted the video, the account became private or was banned, or the video failed TikTok's moderation review.
+
+This is especially important for datasets that only release post IDs, like US Election, Ukraine and PoliTok-DE. To use them, researchers must download the data again from TikTok. We call this "hydration". But by the time someone does this, part of the sample is already gone.
+
+
+[Slide 11 — Creator concentration]
+
+Finally, the seed also decides who dominates the sample.
+
+In creator-based datasets, the authors decide how many posts each creator contributes. TIDES took about fifty recent videos per creator, so the top one percent of creators hold only 1.1 percent of the posts.
+
+In post-based and user-based datasets, most creators appear only once. The median is one post per creator. But a small group of creators still dominates. In TikTok-10M, the top one percent of creators produced 21.4 percent of all posts.
+
+GESIS shows a similar share, 21.5 percent. But be careful: GESIS has only eighteen outlets, so its "top one percent" is just one news outlet.
+
+
+[Slide 12 — Takeaways]
+
+Let me sum up. No dataset is a random sample of TikTok. I have four main takeaways.
+
+First, missing fields are data. Only two of ten datasets report followers, and only four report engagement.
+
+Second, snapshot age varies. The median crawl lag goes from four days to about 186 days.
+
+Third, posts vanish. Up to 39.7 percent of posts were deleted when they were checked again.
+
+Fourth, seeds shape samples. The top one percent of creators hold between 1.1 and 21.4 percent of posts, depending on how the posts were found.
+
+So, before we choose a dataset, I suggest we always ask four questions. What is the seed? Does it have engagement and follower data? What is the crawl lag? And how much has been deleted, or can still be hydrated?
+
+Thank you very much. I'm happy to take your questions.
